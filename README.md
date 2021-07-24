@@ -1,1 +1,1 @@
-# rock_paper_scissors
+A project testing my JavaScript capabilities to create a simple rock paper scissors game.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>First JS Website</title>
+  </head>
+
+  <body>
+    <script>
+      var me = { 
+        name: 'Chris',
+        location: 'Panevezys',
+        age: '20'
+      }
+    // Expectations - at this point todos is undefined 80% confident
+    // Reality - todos returns a value of undefined
+    var todos = ['Item 0', 'Item 1', 'Item 2'];
+    var todol = [
+      {
+        todolName: 'Practice coding', 
+        todolValue: true
+      },
+      {
+        todolName: 'Go to work', 
+        todolValue: false
+      }
+    ]
+    // Expectations - at this point todos is a declared variable with 3 items, 100% confident
+    // Reality - indeed the variable array is declared containing 3 items
+      console.log('This is my first experimental JS program.');
+    // Expected Behaviour - The console will return with a value equal to what is written in the parentheses 100%
+    // Reality - Correct, the console printed out the defined value.
+      console.log('With this test, I am using console log to see if I can print text reliably in the console.');
+      todos[3] = 'Item 3';
+      todos[4] = 'Item 4';
+      todos.splice(4, 1);
+      console.log(todos);
+      function addshow(added){
+        todos.push(added);
+        console.log(todos);
+      }
+      function editshow(anum, res){
+        todos[anum] = res;
+        console.log(todos);
+      }
+      function removeshow(pos, num){
+        todos.splice(pos, num)
+        console.log(todos);
+      }
+    
+    </script>
+  </body>
+</html>
